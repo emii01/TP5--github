@@ -1,71 +1,3 @@
-# """ejercicio 1"""
-# escuela = {
-#     "alumnos" : []
-# }
-
-# def agregarAlumno(nombre, apellido, fechaNacimiento, dni, nombreTutor):
-#     alumno = {
-#         "nombre": nombre,
-#         "apellido": apellido,
-#         "fechaDeNacimiento": fechaNacimiento,
-#         "DNI": dni,
-#         "nombreTutor": nombreTutor,
-#         "notas": [],
-#         "cantidadFaltas": 0,
-#         "cantidadAmonestaciones": 0
-#     }
-
-# def agregarNota(dni ,nota):
-#     for alumno in escuela["alumnos"]:
-#         if alumno["DNI"] == dni:
-#             alumno["notas"].append(nota)
-#             print(f"nota {nota} agregada para el alumno {alumno["nombre"]} {alumno["apellido"]}")
-#         else:
-#             print("alumno NO encontrado")
-
-# def agregarFaltas(dni):
-#     for alumno in escuela["alumnos"]:
-#         if alumno["DNI"] == dni:
-#             alumno["cantidadFaltas"] += 1
-#             print(f"se registro la falta para el alumno {alumno["nombre"]} {alumno["apellido"]}")
-#         else:
-#             print("Alumno NO encontrado")
-
-# def agregarAmonestaciones(dni):
-#     for alumno in escuela["alumnos"]:
-#         if alumno["DNI"] == dni:
-#             alumno["cantidadAmonestaciones"] += 1
-#             print(f"Se registro una amonestacion para el alumno {alumno["nombre"]} {alumno["apellido"]}")
-
-# def eliminarAlumnos(dni):
-#     for i, alumno in escuela["alumnos"]:
-#         if alumno["DNI"] == dni:
-#             eliminado = escuela["alumnos"].pop(i)
-#             print(f"Alumno {eliminado["nombre"]} {eliminado["apellido"]} expulsado del colegio")
-
-# def mostrarAlumnos(dni):
-#     for alumno in escuela["alumnos"]:
-#         if alumno["DNI"] == dni:
-#             print("INFORMACION DEL ALUMNO")
-#             print(f"Nombre: {alumno["nombre"]}")
-#             print(f"Apellido: {alumno["apellido"]}")
-#             print(f"Fecha de nacimiento: {alumno["fechaDeNacimiento"]}")
-#             print(f"DNI: {alumno["DNI"]}")
-#             print(f"Nombre del Tutor: {alumno["nombreTutor"]}")
-#             print(f"Notas: {alumno["notas"]}")
-#             print(f"Cantidad de Faltas: {alumno["cantidadFaltas"]}")
-#             print(f"Cantidad de Amonestaciones: {alumno["cantidadAmonestaciones"]}")
-#         else:
-#             print("Alumno NO encontrado")
-
-# agregarAlumno = ("emiliano", "buhajeruk", "26-01-06", "46666920", "Fabiana")
-# agregarAlumno = ("sofia", "llanos", "22-06-09", "39001242", "Carre")
-# agregarNota = ("46666920", 8.5)
-# agregarNota = ("46666920", 9.0)
-
-# Sistema de gestión de alumnos
-
-
 escuela = {
     "Alumnos": []
 }
@@ -180,5 +112,4 @@ def menu():
         else:
             print("Opción no válida. Intente nuevamente.")
 
-# Ejecutar el programa
 menu()
